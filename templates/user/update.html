@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+    <form action="" class="m-auto w-50 border p-4" enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        {{form}}
+        {{profilForm}}
+        <input type="submit" value="Güncelle" class="btn btn-outline-success mt-3">
+    </form>
+{% endblock content %}

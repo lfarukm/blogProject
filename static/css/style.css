@@ -1,0 +1,90 @@
+
+/*! Navbar */
+nav{
+    flex-direction: row;
+    list-style: none;
+    padding: 20px 0;
+    border-radius: 25px;
+    border: 0.1px solid #099FFF;
+    background-color: #18181B;
+    box-shadow: © 4px 8px 0 #00FFFF, © 6px 20px 0
+    rgba(0,0, 0, 0.19);
+}
+ul{
+    list-style: none;
+    display:flex;
+    margin: 0;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    margin-left: 2rem;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:after{
+    display: block;
+}
+
+li:hover:after{
+    transform: scaleX(1);
+}
+
+
+/*! profil beğeni ve paylaşımlar : */
+.tabcontent{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.tab{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tablinks{
+    background-color: transparent;
+    border: none;
+    width: 48%;
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+.tablinks.active{
+    border-bottom: 1px solid white;
+}
+
+.indexShodow{
+    border: 2px solid white;
+    border-radius: 20px 50px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.detailShodow{
+    border: 1px solid white;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.followShodow{
+    border: 2px solid rgb(124, 148, 170);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.paylasimShodow{
+    border: 2px solid rgb(0, 86, 94);
+    border-radius: 10px;
+}
+
