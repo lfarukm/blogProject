@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect
 
+# kendimiz oluşturduğmuz importlar.
 from .models import *
 from .forms import *
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 
-#! index sayfası :
+#! index sayfası : 
 def index(request):
     posts = Post.objects.filter(isPublish = True).order_by('-created_at')#? ("[:1]" şunu parentezin sonuna yazarsan bir sayfada kaçtane gözükeceğini belirler.) burdaki order_by('-created_at') sayfada hangi post daha önce geliri yapıyoruz.başına - koyduğmuz için en son kaydolan en başta gözükücek. yada direk hiçbişey yazmayıp sadece ? koyarsan rastgale bir post çıkarır.
     #? burda izin verdiğmiz postları yayınlamak için yaziyoruz.
